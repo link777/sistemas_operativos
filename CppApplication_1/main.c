@@ -13,8 +13,7 @@
  * 
  */
 
-/*/#define max_resources = 4;
-#define max_process = 10;*/
+/*Máximo de recursos = 4 y máximo de procesos = 10*/
 
 typedef struct {
     int matriz [4][10];
@@ -84,6 +83,7 @@ void matching_need(int* disponibility, matrix need, int resourses_quantity, int 
                 j = +resourses_quantity;
 }
 
+
 int main(int argc, char** argv) {
     int resources_quantity, process_quantity, i = 0;
     matrix assigned, maximum, need;
@@ -92,6 +92,8 @@ int main(int argc, char** argv) {
     int disponibility[resources_quantity];
     int auxiliar[resources_quantity];
     printf("Escriba Cantidad de Procesos. Máximo 10"); /*Crear las excepciones con do-while*/
+    scanf("%d", &process_quantity);
+    printf(""); /*Crear las excepciones con do-while*/
     scanf("%d", &process_quantity);
 
 
